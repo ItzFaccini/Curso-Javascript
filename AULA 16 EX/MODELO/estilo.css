@@ -1,0 +1,28 @@
+
+body{
+    background: gray;
+    font: normal 15pt arial;
+}
+header{
+background: gray;
+}
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgb(56, 56, 56);
+}
+select#lista{
+    width: 150px;
+}
+h1{
+    text-align: center;
+}
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+
+}

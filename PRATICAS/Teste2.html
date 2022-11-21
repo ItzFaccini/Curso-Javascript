@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(181, 176, 176) ;
+        }
+        div#grat{
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Avalie este serviço com uma nota de 0 a 10!</h1>
+    Nota: <input type='number' id="notadocliente" name="notadocliente">
+    <input type="button" id="avaliar" value="Avaliar" onclick="avaliar()"> 
+    <div id="grat">
+
+    </div>
+
+    <script>
+        function avaliar(){
+        var aval = document.getElementById('notadocliente')
+        var grat = document.getElementById('grat')
+        var notarecebida = Number(aval.value)
+       switch(notarecebida) {
+                case 0:
+                    grat.innerHTML= `Que pena uma <strong>${notarecebida}</strong> , Deixe um comentário para que possamos melhorar!`
+                    break
+                case 1:
+                    grat.innerHTML= `Que pena uma nota <strong>${notarecebida}</strong> , Deixe um comentário para que possamos melhorar!`
+                    break
+                case 2:
+                    grat.innerHTML= `Que pena um <strong>${notarecebida}</strong> , Deixe um comentário para que possamos melhorar!`
+                    break
+                case 3:
+                    grat.innerHTML= `Que pena um <strong>${notarecebida}</strong> , Deixe um comentário para que possamos melhorar!`
+                    break
+                case 4:
+                    grat.innerHTML= `Que pena um <strong>${notarecebida}</strong> , Deixe um comentário para que possamos melhorar!`
+                    break
+                case 5:
+                    grat.innerHTML= `Que pena um <strong>${notarecebida}</strong> , então estamos na metade do caminho para lhe agradar, por favor nos diga oque não gostou!`
+                    break
+                case 6:
+                    grat.innerHTML= `Que pena um <strong>${notarecebida}</strong> , estamos na média, mas oque não lhe agradou?`
+                    break
+                case 7:
+                    grat.innerHTML= `Olha! Um <strong>${notarecebida}</strong> , quer dizer que estamos bem, mas porque não foi um 10?`
+                    break
+                case 8:
+                    grat.innerHTML= `Olha! Um <strong>${notarecebida}</strong> , quer dizer que estamos bem, mas porque não foi um 10?`
+                    break
+                case 9:
+                    grat.innerHTML= `Uau! Um <strong>${notarecebida}</strong> , muito obrigado por esta nota, mas me diz ai, porque não foi um 10?`
+                    break
+                case 10:
+                    grat.innerHTML= `UAU! Um <strong>${notarecebida}</strong> , quer dizer então que nosso trabalho está nos conformes? Obrigado pelo apoio!`
+                    break
+                default:
+                    grat.innerHTML= '<strong>[ERRO]</strong> Por favor de uma nota valida.'
+                    break
+        }
+    }
+    </script>
+</body>
+</html>

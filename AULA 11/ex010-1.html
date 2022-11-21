@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <Style>
+        body{
+            background-color: gray;
+        }
+        div#res{
+            line-height: 25px;
+        }
+    </Style>
+</head>
+<body>
+    <h1> Sistema de Controle de Nacionalidade</h1>
+    País: <input type="text" name="nac" id="nac">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificar() {
+            var país= document.getElementById('nac')
+            var res = document.getElementById('res')
+            var nac = String(país.value)
+            if(nac=='Brasil'){
+                res.innerHTML = `Você é Brasileiro!`
+            }else{
+                res.innerHTML = `Sai do meu Brasil e volta pra ${nac}`
+            }
+        }
+    </script>
+</body>
+</html>
